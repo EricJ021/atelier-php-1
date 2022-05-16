@@ -18,11 +18,14 @@
     <p>
         <label for="input-confirmation">Confirmation :</label>
         <input type="password" id="input-confirmation" name="data-confirmation">
+        <span id="message"></span><br>
     </p>
     <p>
         <input type="submit" value="Enregistrer">
     </p>
     
 </form>
+
+<script src="checkPwd.js"></script>
 
 <?php include("include_footer.php") ?>

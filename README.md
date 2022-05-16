@@ -15,3 +15,4 @@
 ### Superglobales
 - [$_POST](https://www.php.net/manual/fr/reserved.variables.post)
 - [$_SESSION](https://www.php.net/manual/en/reserved.variables.session)
+

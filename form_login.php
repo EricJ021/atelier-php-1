@@ -7,10 +7,16 @@
 </p>
 <p>
     <label for="">Mot de passe :</label>
-    <input type="password" name="data-password">
+    <input type="password" name="data-password" id="hInput">
+
+    <a id="showHideBtn" href="#">Maintenir pour montrer</a>
 </p>
+
 <p>
     <input type="submit" value="Se connecter">
 </p>
 </form>
+
+<script src="showHide.js"></script>
+
 <?php include("include_footer.php") ?>

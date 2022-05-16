@@ -7,7 +7,7 @@ $username=strip_tags($_POST['data-username']);
 $password=strip_tags($_POST['data-password']);
 
 require_once("db_connect.php");
-$sql='SELECT user_password FROM `tbl_users` WHERE `user_username`= :user_username ';
+$sql='SELECT `user_password` FROM `tbl_users` WHERE `user_username`= :user_username ';
 $query = $dbh->prepare($sql);
 $query->bindValue(':user_username', $username, PDO::PARAM_STR);
 $query->execute();
@@ -17,10 +17,11 @@ var_dump($hash);
 
 if ( password_verify($password, $hash['user_password']) ) {
     $_SESSION['info'] = 'Vous êtes connecté.';
+    $_SESSION['username'] = $username;
     header('Location: view_contact.php');   
 }else {
     $_SESSION['info'] = 'Le mot de passe est invalide.';
-    //header('Location: form_login.php');
+    header('Location: form_login.php');
 }
 
     

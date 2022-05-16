@@ -24,11 +24,12 @@
         
         
             $_SESSION['info'] = "<p style='color:green'>Vous êtes enregistré !</p>" ;
-            header('Location: index.php');
+            header('refresh:2; url=index.php');
         
         
         }else {
             echo "problème mot de passe";
+            header('refresh:2; url=form_register.php');
         }
         
 
