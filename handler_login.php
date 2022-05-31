@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset( $_POST['data-username'] ) && !empty( $_POST['data-username'])
-&& isset( $_POST['data-password'] ) && !empty( $_POST['data-password'])) {
+&& isset( $_POST['data-password'] ) && !empty( $_POST['data-password'])){
 
 $username=strip_tags($_POST['data-username']);
 $password=strip_tags($_POST['data-password']);

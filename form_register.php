@@ -1,6 +1,6 @@
 <?php include("include_header.php") ?>
 
-<form action="handler_register.php" method="post">
+<form action="handler_register.php" method="post" enctype="multipart/form-data">
 
 <p>
         <label for="input-username">Nom :</label>
@@ -10,7 +10,14 @@
         <label for="input-mail">Email :</label>
         <input type="email" id="input-mail" name="data-mail">
     </p>
+
+
+    <p>
+        <span>Choisir une photo :</span><br/>
+	    <input type="file" name="data-image" accept=".png, .jpg, .jpeg"/><br/><br/>
+    </p>
     
+
     <p>
         <label for="input-password">Mot de passe :</label>
         <input type="password" id="input-password" name="data-password">
